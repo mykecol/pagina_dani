@@ -1176,6 +1176,7 @@ button {
     }
 
     .book-right {
+        flex: none;
         height: 460px;
         min-height: 460px;
         border-radius: 0 0 26px 26px;
