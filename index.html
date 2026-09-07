@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Para ti 💕</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Luces decorativas -->
+    <div class="lights">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Corazones flotando -->
+    <div class="floating-hearts">
+        <span>♡</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+    </div>
+
+
+    <main class="scene">
+
+        <!-- Nota izquierda -->
+        <div class="note note-left">
+            <span>💕</span>
+            <p>
+                Gracias por<br>
+                existir en<br>
+                mi vida
+            </p>
+        </div>
+
+
+        <!-- Flor -->
+        <div class="flower-pot">
+            <div class="flowers">🌸🌸🌸</div>
+            <div class="pot">🪴</div>
+        </div>
+
+
+        <!-- Estrella -->
+        <div class="star">
+            ⭐
+        </div>
+
+
+        <!-- Carta principal -->
+        <section class="letter-container">
+
+            <!-- Osito -->
+            <div class="teddy">
+                🧸
+            </div>
+
+
+            <!-- Corazón del osito -->
+            <div class="teddy-heart">
+                ❤️
+            </div>
+
+
+            <!-- Carta (ahora incluye el botón, sin sobre rosado) -->
+            <div class="letter">
+
+                <div class="stitched-border"></div>
+
+                <h1>
+                    Tengo algo
+                    <span>para ti</span>
+                    <small>♡</small>
+                </h1>
+
+                <div class="little-heart">
+                    ♡
+                </div>
+
+                <p class="message">
+                    espero te guste mucho,<br>
+                    es un pequeño recuerdo,<br>
+                    de nosotros
+                    <strong>te amo muchito.</strong>
+                </p>
+
+                <button id="btnAbrir">
+                    <span>♥</span>
+                    Abrir
+                    <span>♥</span>
+                </button>
+
+            </div>
+
+            <p class="hint">
+                🧸 Haz clic para comenzar ✨
+            </p>
+
+        </section>
+
+
+        <div class="polaroid">
+            <div class="photo-placeholder">
+                <img src="mi-foto.jpeg" alt="Nuestra foto">
+            </div>
+            <p>
+                Tú eres mi<br>
+                lugar favorito ❤️
+            </p>
+        </div>
+
+
+        <!-- Nota derecha -->
+        <div class="notebook">
+
+            <h3>Contigo:</h3>
+
+            <p>✓ Todo es mejor ❤️</p>
+            <p>✓ Me haces feliz ❤️</p>
+            <p>✓ Quiero más momentos contigo</p>
+
+            <div class="big-heart">
+                ♡
+            </div>
+
+        </div>
+
+
+        <!-- Nube -->
+        <div class="cloud">
+            ☁️
+        </div>
+
+    </main>
+
+    <!-- =========================
+     SEGUNDA SECCIÓN
+========================= -->
+
+<section class="menu-section" id="menuSection">
+
+    <div class="menu-content">
+
+        <div class="menu-header">
+
+            <span class="menu-small">
+                ✨ PARA DANIELITA ✨
+            </span>
+
+            <h2>
+                Hay algo más...
+            </h2>
+
+            <p>
+                Puedes descubrir cada parte
+                cuando quieras 💕
+            </p>
+
+        </div>
+
+
+        <div class="menu-cards">
+
+
+            <!-- CARTAS -->
+
+            <button class="menu-card" id="btnCartas">
+
+                <div class="card-icon">
+                    💌
+                </div>
+
+                <h3>
+                    Carta
+                </h3>
+
+                <p>
+                    Algunas cosas
+                    que quiero decirte
+                </p>
+
+                <span class="card-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+            <!-- FOTOS -->
+
+            <button class="menu-card" id="btnFotos">
+
+                <div class="card-icon">
+                    📸
+                </div>
+
+                <h3>
+                    Fotos
+                </h3>
+
+                <p>
+                    Momentos que
+                    quiero recordar
+                </p>
+
+                <span class="card-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+            <!-- INVITACIÓN -->
+
+            <button class="menu-card special" id="btnInvitacion">
+
+                <div class="card-icon">
+                    💕
+                </div>
+
+                <h3>
+                    Invitación
+                </h3>
+
+                <p>
+                    Tengo una pregunta
+                    para ti...
+                </p>
+
+                <span class="card-arrow">
+                    →
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <div class="menu-footer">
+            Hecho especialmente para ti ❤️
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     SECCIÓN CARTA
+========================= -->
+
+<section class="letter-section" id="letterSection">
+
+    <div class="book-container">
+
+        <!-- Encabezado -->
+
+        <div class="book-header">
+
+            <button class="back-button" id="backFromLetter">
+                ← Volver
+            </button>
+
+            <div class="book-title">
+                <span>💌</span>
+                Una carta para ti
+                <span>💕</span>
+            </div>
+
+        </div>
+
+
+        <!-- LIBRO -->
+
+        <div class="book">
+
+            <!-- Página izquierda decorativa (lomo del cuaderno) -->
+
+            <div class="book-left">
+
+                <div class="left-decoration">
+                    ♡
+                </div>
+
+                <p>
+                    Algunas cosas<br>
+                    simplemente<br>
+                    merecen ser<br>
+                    escritas.
+                </p>
+
+                <div class="left-flower">
+                    🌸
+                </div>
+
+            </div>
+
+
+            <!-- Página derecha: pila de hojas que se voltean -->
+
+            <div class="book-right">
+
+                <div class="pages-stack" id="pagesStack">
+
+                    <!-- HOJA 1 -->
+
+                    <article class="letter-page" data-page="0">
+
+                        <div class="page-face page-front">
+
+                            <span class="page-number">01</span>
+
+                            <h2>Para ti...</h2>
+
+                            <div class="page-line"></div>
+
+                            <p>
+                                Holaaa, hace mucho que tenia esto hecho, solo que creo que nunca encontre el momento de enviartelo o como hacerlo, pero se me hace
+                                algo muy bonito que hice, y me gustaria que lo vieras, hay unas cuantas razones por las que no sabia si enviartelo, pero bueno tomare el riesgo jaja.
+                            </p>
+
+                            <p>
+                                Te voy a explicar como funciona esto, y que es, queria darte un detalle diferente pero no se me ocurria nada, entonces se me ocurrio hacer
+                                una pagina web, y dije, bueno ya que estamos en este tipo de contacto cero se me ocurrio hacer una pagina web y ver si años de carrera han servido
+                                para algo o mejor me retiro jaja mentiras, chiste malo; es algo que hice desde cero, todo esta hecho por mi, el diseño, y como queria armarlo
+                                los pequeños detalles los pense yo, y pues lo mas importante es que te guste, se que no eres muy fan de las cosas digitales, pero espero te guste
+                                y lo puedas ver, y si puedes abrelo en tu compu siento que es mucho mejor verloo desde ahi, realmente me costo bastante jaja, llevo como un mes
+                                armandotelo, pero tambien disfrute mucho hacerlo porque tambien iba aprendiendo jaja
+                            </p>
+
+                            <p>
+                                Cuando entres la idea es que veas primero, las carta, segundo la parte de las fotos y lo ultimo es la invitacion que tenemos que hablar de eso
+                                ...
+                            </p>
+
+                            <div class="page-signature">
+                                Con mucho cariño Miguel, ❤️
+                            </div>
+
+                        </div>
+
+                        <div class="page-face page-back">
+                            <div class="page-back-decor">♡</div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- HOJA 2 -->
+
+                    <article class="letter-page" data-page="1">
+
+                        <div class="page-face page-front">
+
+                            <span class="page-number">02</span>
+
+                            <h2>Lo que significas</h2>
+
+                            <div class="page-line"></div>
+
+                            <p>
+                                Bueno, lo primero es que escribirte una carta siempre me da mucho sentimiento. No sé por qué, pero siempre me pone muy ansioso, 
+                                como que quisiera decirte muchas cosas que me generas y a veces siento que no me entran las palabras en un solo mensaje. Ha sido
+                                muy difícil la distancia entre nosotros, y los dos sabemos que era lo mejor. Y aunque te extraño muchísimo y me ha costado mucho 
+                                como llevar el contacto cero, también siento que ha sido muy positivo en cierta parte.
+
+                            </p>
+
+                            <p>
+                                Para mí eres la mujer más increíble que he conocido en mi vida. No veo otra mujer más en mi vida, y yo realmente no me había dado cuenta
+                                de eso. Yo siempre he pensado que lo de nosotros siempre ha sido una conexión única. Yo nunca he podido coincidir con una persona como
+                                lo hago contigo.
+                                Recuerdo mucho que la primera vez que terminamos me dolió bastante, porque yo pensé que habíamos perdido eso y que ya se había acabado. Y 
+                                yo acepto que después de esa ruptura me volví una persona mucho más cerrada, mucho menos sentimental, y hoy en día pocos saben lo que 
+                                de verdad siento. Pero este tiempo que pasé contigo me hizo recordar por qué vale la pena demostrarle amor de verdad a otra persona.
+
+                            </p>
+
+                            <p>
+                                Ciegamente, tal vez por ignorante o porque simplemente no creí volverme a sentir así, yo me volví a enamorar de ti, Dani.
+                                Recuerdo mucho la primera vez que nos volvimos a ver. Esto creo que no te lo he contado, pero yo ese día sentí un vacío muy grande porque, 
+                                aunque yo pensé que estaba bien y que lo de nosotros ya había aceptado que se había acabado, ese día yo te vi y no podía creer lo hermosa 
+                                que estabas, y que ese día pasaran tantas cosas como si nos hubiéramos visto ya miles de veces.
+                                Yo siempre he sabido que no hay otra mujer en este mundo que me genere lo que tú me generas. Tú eres la única que tengo siempre en mi mente, y hago cosas que yo nunca hubiera hecho.
+
+                            </p>
+
+                            <div class="page-quote">
+                                “Eres la bacteríolga mas hermosa de todas.”
+                            </div>
+
+                        </div>
+
+                        <div class="page-face page-back">
+                            <div class="page-back-decor">🌸</div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- HOJA 3 -->
+
+                    <article class="letter-page" data-page="2">
+
+                        <div class="page-face page-front">
+
+                            <span class="page-number">03</span>
+
+                            <h2>Gracias ❤️</h2>
+
+                            <div class="page-line"></div>
+
+                            <p>
+                                Discúlpame si en algún momento yo he estado distante, si te has sentido insegura, si has pensado que ya no te amo igual. Jamás en esta vida
+                                te he querido hacer daño. Sabes que siempre voy a estar para ti y que aquí voy a estar hasta que la vida me lo permita, ya sea como amigo, 
+                                como tu pareja o como un desconocido.
+                                Te debo esta y la otra vida. Yo me pude haber perdido por caminos por los que no hubiera querido estar. Yo a veces no lo quiero aceptar, 
+                                pero muchas veces me he sentido muy solo. Estar en una fiesta con todos mis amigos y sentirme vacío. Hasta en mi casa he llegado a estar solo,
+                                 porque creo que hay algunos temas de los que no me siento cómodo hablando con mi familia.
+                            </p>
+
+                            <p>
+                                Hasta con muchos de mis amigos he perdido esa confianza, porque siento que ya no tengo un confidente, sino personas que critican tus acciones.
+                                Yo muchas veces he encontrado esa confianza en contarte mis problemas a ti, y agradezco cada momento que has estado ahí, porque has 
+                                demostrado que también soy importante para ti. Siempre son fundamentales para mí las acciones de una persona, y siempre las analizo. 
+                                Yo siempre he sido muy paciente en todos los aspectos; siempre me ha caracterizado eso, pero hoy en día no quiero personas que me resten. 
+                                Las personas con las que quiero estar es porque de verdad me han aportado mucho, y tú también eres súper fundamental en mi vida.
+                                Espero poder construir cosas muy grandes contigo, que podamos amarnos toda la vida, que podamos formar una familia, un hogar, prosperidad 
+                                y crecimiento personal entre los dos; que yo pueda aportar en tu vida como tú lo haces en la mía.
+                            </p>
+
+                            <div class="big-page-heart">♥</div>
+
+                        </div>
+
+                        <div class="page-face page-back">
+                            <div class="page-back-decor">✨</div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- HOJA 4 -->
+
+                    <article class="letter-page" data-page="3">
+
+                        <div class="page-face page-front">
+
+                            <span class="page-number">04</span>
+
+                            <h2>Y finalmente...</h2>
+
+                            <div class="page-line"></div>
+
+                            <p>
+                                Siempre vas a ser mi pequeñina, y van a pasar los años, pero yo siempre te voy a ver como ese angelito que se apareció en mi vida y me llenó 
+                                de amor la vida, de luz, que me ha hecho una mejor persona, que me ha otorgado su vida, sus momentos, y que lo de nosotros a veces 
+                                parece imposible porque hemos pasado por muchas cosas.
+                                Jamás me arrepiento de haberte conocido. Eres la reina más hermosa, más divina, la chica del maquillaje más lindo, la mujer más fuerte 
+                                que conozco, que sigue siendo tan buena, que ama a sus papás como a nadie, la más inteligente, pero sobre todo, la del corazón más hermoso 
+                                en este mundo...
+                            </p>
+
+                            <p>
+                                Es muy loco para mí que, a pesar de que pasen los años, yo te siga amando como desde la primera vez. Te veo aún con los mismos ojos, 
+                                y que a tu lado me sienta como un niño pequeño. La seguridad que me diste durante estos años es la manera más bonita en la que me ha 
+                                amado alguien.
+                                Gracias, Dani, por ser una mujer tan increíble en todos los aspectos. Espero nunca cambies. En serio, quiero que se nos den las cosas.
+                                 Sobre todo, quiero que cumplas tus sueños, tus metas, y que cada cosa que se interponga la vas a poder superar. Y espero poder estar
+                                  a tu lado.
+                            </p>
+
+                            <div class="final-message">
+
+                                Me haces muy feliz. ❤️
+
+                                <span>
+                                    Espero te guste mucho, y espero poder verte pronto...
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="page-face page-back">
+                            <div class="page-back-decor">♡</div>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Controles -->
+
+                <button
+                    class="page-button prev"
+                    id="prevPage">
+                    ←
+                </button>
+
+                <button
+                    class="page-button next"
+                    id="nextPage">
+                    →
+                </button>
+
+
+                <!-- Indicadores -->
+
+                <div class="page-dots" id="pageDots">
+
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <p class="book-hint">
+            Puedes pasar las páginas ❤️
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SECCIÓN FOTOS (collage en corazón)
+========================= -->
+
+<section class="fotos-section" id="fotosSection">
+
+    <div class="fotos-header">
+
+        <button class="back-button" id="backFromFotos">
+            ← Volver
+        </button>
+
+        <div class="fotos-title">
+            <span>📸</span>
+            Nuestros momentos
+            <span>💕</span>
+        </div>
+
+    </div>
+
+
+    <div class="photo-garland-wrap">
+
+        <div class="photo-garland" id="photoGarland">
+
+            <!-- fila 1 -->
+            <div class="garland-row">
+                <svg class="garland-wire" viewBox="0 0 100 20" preserveAspectRatio="none">
+                    <path d="M0,4 Q25,17 50,6 T100,4" />
+                </svg>
+                <span class="garland-light" style="left:4%; top:4px;"></span>
+                <span class="garland-light" style="left:22%; top:14px;"></span>
+                <span class="garland-light" style="left:40%; top:9px;"></span>
+                <span class="garland-light" style="left:58%; top:13px;"></span>
+                <span class="garland-light" style="left:76%; top:7px;"></span>
+                <span class="garland-light" style="left:94%; top:4px;"></span>
+
+                <button class="photo-item" style="left:10%; --top:26px; --thread:19px; --rot:-5deg; --size:62px;" data-caption="El día que todo comenzó">
+                    <img src="foto1.jpeg" alt="Foto 1">
+                </button>
+                <button class="photo-item" style="left:30%; --top:36px; --thread:29px; --rot:4deg; --size:65px;" data-caption="te amo 3000">
+                    <img src="foto2.jpeg" alt="Foto 2">
+                </button>
+                <button class="photo-item" style="left:50%; --top:26px; --thread:19px; --rot:-3deg; --size:68px;" data-caption="Un momento que quiero recordar siempre">
+                    <img src="foto3.jpeg" alt="Foto 3">
+                </button>
+                <button class="photo-item" style="left:70%; --top:36px; --thread:29px; --rot:5deg; --size:63px;" data-caption="Contigo hasta lo simple se siente especial">
+                    <img src="foto4.jpeg" alt="Foto 4">
+                </button>
+                <button class="photo-item" style="left:90%; --top:26px; --thread:19px; --rot:-4deg; --size:62px;" data-caption="Esa mirada me fascina">
+                    <img src="foto5.jpeg" alt="Foto 5">
+                </button>
+            </div>
+
+            <!-- fila 2 -->
+            <div class="garland-row">
+                <svg class="garland-wire" viewBox="0 0 100 20" preserveAspectRatio="none">
+                    <path d="M0,5 Q25,16 50,7 T100,5" />
+                </svg>
+                <span class="garland-light" style="left:4%; top:5px;"></span>
+                <span class="garland-light" style="left:22%; top:13px;"></span>
+                <span class="garland-light" style="left:40%; top:9px;"></span>
+                <span class="garland-light" style="left:58%; top:12px;"></span>
+                <span class="garland-light" style="left:76%; top:8px;"></span>
+                <span class="garland-light" style="left:94%; top:5px;"></span>
+
+                <button class="photo-item" style="left:10%; --top:36px; --thread:29px; --rot:4deg; --size:63px;" data-caption="Esta foto sigue siendo muy especial para mi">
+                    <img src="foto6.jpeg" alt="Foto 6">
+                </button>
+                <button class="photo-item" style="left:30%; --top:26px; --thread:19px; --rot:-5deg; --size:66px;" data-caption="Quiero mil momentos más así">
+                    <img src="foto7.jpeg" alt="Foto 7">
+                </button>
+                <button class="photo-item" style="left:50%; --top:36px; --thread:29px; --rot:3deg; --size:62px;" data-caption="Ese abrazo que no quería que terminara">
+                    <img src="foto8.jpeg" alt="Foto 8">
+                </button>
+                <button class="photo-item" style="left:70%; --top:26px; --thread:19px; --rot:-4deg; --size:65px;" data-caption="te ves muy hermosa en esta foto">
+                    <img src="foto9.jpeg" alt="Foto 9">
+                </button>
+                <button class="photo-item" style="left:90%; --top:36px; --thread:29px; --rot:5deg; --size:63px;" data-caption="eres demasiado bellaaaa">
+                    <img src="foto10.jpeg" alt="Foto 10">
+                </button>
+            </div>
+
+            <!-- fila 3 -->
+            <div class="garland-row">
+                <svg class="garland-wire" viewBox="0 0 100 20" preserveAspectRatio="none">
+                    <path d="M0,4 Q25,17 50,6 T100,4" />
+                </svg>
+                <span class="garland-light" style="left:4%; top:4px;"></span>
+                <span class="garland-light" style="left:22%; top:14px;"></span>
+                <span class="garland-light" style="left:40%; top:9px;"></span>
+                <span class="garland-light" style="left:58%; top:13px;"></span>
+                <span class="garland-light" style="left:76%; top:7px;"></span>
+                <span class="garland-light" style="left:94%; top:4px;"></span>
+
+                <button class="photo-item" style="left:10%; --top:26px; --thread:19px; --rot:-3deg; --size:65px;" data-caption="Momentos pequeños, recuerdos grandes">
+                    <img src="foto11.jpeg" alt="Foto 11">
+                </button>
+                <button class="photo-item" style="left:30%; --top:36px; --thread:29px; --rot:5deg; --size:62px;" data-caption="Gracias por tantos recuerdos bonitos">
+                    <img src="foto12.jpeg" alt="Foto 12">
+                </button>
+                <button class="photo-item" style="left:50%; --top:26px; --thread:19px; --rot:-4deg; --size:68px;" data-caption="Contigo, todo es mejor">
+                    <img src="foto13.jpeg" alt="Foto 13">
+                </button>
+                <button class="photo-item" style="left:70%; --top:36px; --thread:29px; --rot:4deg; --size:63px;" data-caption="Uno de mis días favoritos">
+                    <img src="foto14.jpeg" alt="Foto 14">
+                </button>
+                <button class="photo-item" style="left:90%; --top:26px; --thread:19px; --rot:-5deg; --size:62px;" data-caption="No cambiaría este recuerdo por nada">
+                    <img src="foto15.jpeg" alt="Foto 15">
+                </button>
+            </div>
+
+            <!-- fila 4 (nueva) -->
+            <div class="garland-row">
+                <svg class="garland-wire" viewBox="0 0 100 20" preserveAspectRatio="none">
+                    <path d="M0,5 Q25,16 50,7 T100,5" />
+                </svg>
+                <span class="garland-light" style="left:4%; top:5px;"></span>
+                <span class="garland-light" style="left:22%; top:13px;"></span>
+                <span class="garland-light" style="left:40%; top:9px;"></span>
+                <span class="garland-light" style="left:58%; top:12px;"></span>
+                <span class="garland-light" style="left:76%; top:8px;"></span>
+                <span class="garland-light" style="left:94%; top:5px;"></span>
+
+                <button class="photo-item" style="left:10%; --top:26px; --thread:19px; --rot:5deg; --size:62px;" data-caption="Cada foto cuenta una parte de nosotros">
+                    <img src="foto16.jpeg" alt="Foto 16">
+                </button>
+                <button class="photo-item" style="left:30%; --top:36px; --thread:29px; --rot:-4deg; --size:65px;" data-caption="Así se ve la felicidad">
+                    <img src="foto17.jpeg" alt="Foto 17">
+                </button>
+                <button class="photo-item" style="left:50%; --top:26px; --thread:19px; --rot:3deg; --size:68px;" data-caption="Momentos que guardo en el corazón">
+                    <img src="foto18.jpeg" alt="Foto 18">
+                </button>
+                <button class="photo-item" style="left:70%; --top:36px; --thread:29px; --rot:-5deg; --size:63px;" data-caption="Contigo el tiempo vuela">
+                    <img src="foto19.jpeg" alt="Foto 19">
+                </button>
+                <button class="photo-item" style="left:90%; --top:26px; --thread:19px; --rot:4deg; --size:62px;" data-caption="Y esto apenas comienza">
+                    <img src="foto20.jpeg" alt="Foto 20">
+                </button>
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <p class="fotos-hint">
+        Toca cualquier foto para verla más grande ❤️
+    </p>
+
+</section>
+
+
+<!-- =========================
+     LIGHTBOX (zoom de foto + mensaje)
+========================= -->
+
+<div class="photo-lightbox" id="photoLightbox">
+
+    <button class="lightbox-close" id="lightboxClose">
+        ✕
+    </button>
+
+    <div class="lightbox-content">
+
+        <img id="lightboxImg" src="" alt="Foto ampliada">
+
+        <p id="lightboxCaption"></p>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     SECCIÓN INVITACIÓN - JUEGO
+========================= -->
+
+<section class="invitation-section" id="invitationSection">
+
+    <div class="invitation-container">
+
+
+        <!-- BOTÓN VOLVER -->
+
+        <button
+            class="invitation-back"
+            id="backFromInvitation">
+
+            ← Volver
+
+        </button>
+
+
+        <!-- =================================================
+             JUEGO
+        ================================================= -->
+
+        <div class="invitation-game" id="invitationGame">
+
+
+            <!-- =================================================
+                 INTRO
+            ================================================= -->
+
+            <div
+                class="game-screen active"
+                id="gameIntro">
+
+                <div class="game-decoration">
+                    💕
+                </div>
+
+                <span class="game-label">
+                    UNA PEQUEÑA SORPRESA
+                </span>
+
+                <h2>
+                    Tengo una pregunta...
+                </h2>
+
+                <p>
+                    pero antes de enseñarte algo,
+                    tendrás que descubrirlo 👀
+                </p>
+
+                <button
+                    class="game-main-button"
+                    id="startGame">
+
+                    descubrir 💕 →
+
+                </button>
+
+            </div>
+
+
+            <!-- =================================================
+                 PISTA 1
+            ================================================= -->
+
+            <div
+                class="game-screen"
+                id="gameClue1">
+
+                <span class="clue-number">
+                    PISTA 01
+                </span>
+
+                <div class="clue-icon">
+                    🎵
+                </div>
+
+                <h2>
+                    Esto tiene algo que ver
+                    con música...
+                </h2>
+
+                <p>
+                    ¿Qué crees que vamos a hacer?
+                </p>
+
+
+                <div class="game-options">
+
+                    <button
+                        class="game-option"
+                        data-answer="wrong">
+
+                        🎬
+
+                        <span>
+                            Una película
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="game-option"
+                        data-answer="correct">
+
+                        🎵
+
+                        <span>
+                            Un concierto
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="game-option"
+                        data-answer="wrong">
+
+                        🍕
+
+                        <span>
+                            Una cena
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+                <p
+                    class="game-feedback"
+                    id="feedback1">
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 PISTA 2
+            ================================================= -->
+
+            <div
+                class="game-screen"
+                id="gameClue2">
+
+                <span class="clue-number">
+                    PISTA 02
+                </span>
+
+                <div class="clue-icon">
+                    🎤
+                </div>
+
+                <h2>
+                    El protagonista de esta
+                    historia ya lo conoces...
+                </h2>
+
+                <p>
+                    ¿Quién será?
+                </p>
+
+
+                <div class="game-options">
+
+                    <button
+                        class="game-option"
+                        data-answer="wrong">
+
+                        🎸
+
+                        <span>
+                            Anuel bebecita uaaa
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="game-option"
+                        data-answer="correct">
+
+                        🎤
+
+                        <span>
+                            Omar Courtz
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="game-option"
+                        data-answer="wrong">
+
+                        🧸
+
+                        <span>
+                            El osito
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+                <p
+                    class="game-feedback"
+                    id="feedback2">
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 PISTA 3
+            ================================================= -->
+
+            <div
+                class="game-screen"
+                id="gameClue3">
+
+                <span class="clue-number">
+                    ÚLTIMA PISTA
+                </span>
+
+                <div class="clue-icon">
+                    📅
+                </div>
+
+                <h2>
+                    Ya sabes qué es...
+                    <br>
+                    ya sabes con quién...
+                </h2>
+
+                <p>
+                    Pero falta algo importante 👀
+                </p>
+
+                <h3>
+                    ¿Cuándo crees que es?
+                </h3>
+
+
+                <div class="game-options">
+
+                    <button
+                        class="game-option"
+                        data-answer="correct">
+
+                        ❤️
+
+                        <span>
+                            13 de noviembre
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="game-option"
+                        data-answer="wrong">
+
+                        🎄
+
+                        <span>
+                            24 de diciembre
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="game-option"
+                        data-answer="wrong">
+
+                        💘
+
+                        <span>
+                            preguntarle a Miguel
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+                <p
+                    class="game-feedback"
+                    id="feedback3">
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             INVITACIÓN FINAL
+        ================================================= -->
+
+        <div
+            class="final-invitation"
+            id="finalInvitation">
+
+
+            <div class="final-sparkles">
+                ✨
+            </div>
+
+
+            <span class="final-label">
+                TU INVITACIÓN
+            </span>
+
+
+            <h2>
+                Tengo algo para ti...
+            </h2>
+
+
+            <!-- PORTADA DEL ÁLBUM -->
+
+            <div class="album-container">
+
+                <img
+                    src="album-mar-courtz.jpg"
+                    alt="Mar Courtz - portada del álbum"
+                    class="album-image">
+
+            </div>
+
+
+            <!-- INFORMACIÓN DEL CONCIERTO -->
+
+            <div class="concert-info">
+
+                <h3>
+                    Mar Courtz
+                </h3>
+
+                <p class="concert-name">
+                    Por Si Mañana No Estoy
+                </p>
+
+
+                <div class="concert-details">
+
+                    <span>
+                        📅 13 NOVIEMBRE 2026
+                    </span>
+
+                    <span>
+                        📍 MOVISTAR ARENA · BOGOTÁ
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- PREGUNTA -->
+
+            <div class="question-container">
+
+                <p>
+                    entonces...
+                </p>
+
+                <h2>
+                    ¿Quieres ir conmigo? ❤️
+                </h2>
+
+
+                <div class="answer-buttons">
+
+                    <button
+                        class="answer-yes"
+                        id="answerYes">
+
+                        Sí ❤️
+
+                    </button>
+
+
+                    <button
+                        class="answer-no"
+                        id="answerNo">
+
+                        No 🥺
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             RESPUESTA SÍ
+        ================================================= -->
+
+        <div
+            class="invitation-success"
+            id="invitationSuccess">
+
+            <div class="success-hearts">
+                ❤️ 💕 ❤️
+            </div>
+
+
+            <div class="success-icon">
+                🎉
+            </div>
+
+
+            <h2>
+                Sabía que dirías que sí😉
+            </h2>
+
+
+            <p>
+                Entonces tenemos una cita...
+            </p>
+
+
+            <div class="success-date">
+                13 · 11 · 2026
+            </div>
+
+
+            <p class="success-place">
+
+                Omar Courtz
+                <br>
+                Movistar Arena · Bogotá
+
+            </p>
+
+
+            <div class="success-message">
+                Nos vemos ese día ❤️
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             RESPUESTA NO
+        ================================================= -->
+
+        <div
+            class="invitation-no"
+            id="invitationNo">
+
+            <div class="no-icon">
+                🥺
+            </div>
+
+
+            <h2>
+                ¿Segura?
+            </h2>
+
+
+            <p>
+                Creo que deberías pensarlo
+                un poquito más...
+            </p>
+
+
+            <button
+                class="try-again-button"
+                id="tryAgain">
+
+                Déjame pensarlo 💕
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
