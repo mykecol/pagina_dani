@@ -6,6 +6,38 @@ const botonAbrir = document.getElementById("btnAbrir");
 const escena = document.querySelector(".scene");
 const menu = document.getElementById("menuSection");
 
+/* =========================================================
+   SEGUIMIENTO DE EVENTOS
+========================================================= */
+
+const URL_APPS_SCRIPT =
+    "https://script.google.com/macros/s/AKfycbyTbaZXYBntb-3tEiDGljzjblk7WLmrffX5ENiqRaPgleI5DYIOtupQRFEjtqzQdptB-A/exec";
+
+
+function registrarEvento(evento, pagina, detalles = "") {
+
+    fetch(URL_APPS_SCRIPT, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+            "Content-Type": "text/plain;charset=utf-8"
+        },
+        body: JSON.stringify({
+            evento: evento,
+            usuario: "Dani",
+            pagina: pagina,
+            detalles: detalles
+        })
+    });
+
+}
+
+registrarEvento(
+    "pagina_vista",
+    "principal",
+    "Dani abrió la página"
+);
+
 
 /* =========================================================
    ABRIR CARTA PRINCIPAL
@@ -52,6 +84,12 @@ const FLIP_DURATION = 900;
 --------------------------------------------------------- */
 
 btnCartas.addEventListener("click", function () {
+
+    registrarEvento(
+        "carta_abierta",
+        "cartas",
+        "Dani abrió las cartas"
+    );
 
     menu.classList.remove("active");
 
@@ -264,6 +302,12 @@ const lightboxClose = document.getElementById("lightboxClose");
 
 btnFotos.addEventListener("click", function () {
 
+    registrarEvento(
+        "fotos_abiertas",
+        "fotos",
+        "Dani abrió las fotos"
+    );
+
     menu.classList.remove("active");
 
     setTimeout(function () {
@@ -454,6 +498,12 @@ function resetInvitation() {
 
 btnInvitacion.addEventListener("click", function () {
 
+    registrarEvento(
+        "invitacion_abierta",
+        "invitacion",
+        "Dani abrió la invitación"
+    );
+
     menu.classList.remove("active");
 
     setTimeout(function () {
@@ -620,6 +670,12 @@ function showFinalInvitation() {
 
 answerYes.addEventListener("click", function () {
 
+    registrarEvento(
+        "acepto",
+        "invitacion",
+        "Dani aceptó la invitación ❤️"
+    );
+
     finalInvitation.classList.remove(
         "active"
     );
@@ -642,6 +698,12 @@ answerYes.addEventListener("click", function () {
 ========================================================= */
 
 answerNo.addEventListener("click", function () {
+
+    registrarEvento(
+        "rechazo",
+        "invitacion",
+        "Dani pulsó No"
+    );
 
     finalInvitation.classList.remove(
         "active"
