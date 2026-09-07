@@ -11,7 +11,7 @@ const menu = document.getElementById("menuSection");
 ========================================================= */
 
 const URL_APPS_SCRIPT =
-    "https://script.google.com/macros/s/AKfycbyTbaZXYBntb-3tEiDGljzjblk7WLmrffX5ENiqRaPgleI5DYIOtupQRFEjtqzQdptB-A/exec";
+    "https://script.google.com/macros/s/AKfycbwUi2C4ZXjBtKHcnCOyO6O62Iz9nUY8ajIeTtcPDDDZfBs0BKo8schiYhgtyUbVWiAfMg/exec";
 
 
 function registrarEvento(evento, pagina, detalles = "") {
@@ -240,6 +240,59 @@ nextPage.addEventListener("click", function () {
 prevPage.addEventListener("click", function () {
 
     goToPage(currentPage - 1);
+
+});
+
+
+/* ---------------------------------------------------------
+   FIX SCROLL TÁCTIL EN iOS SAFARI
+   ---------------------------------------------------------
+   Bug real de WebKit: cuando un elemento con overflow-y:auto
+   está dentro de un padre con transform 3D (aquí .letter-page,
+   que necesita rotateY + preserve-3d para el efecto de voltear
+   la hoja), Safari en iPhone recibe los eventos táctiles pero
+   NO los traduce en scroll nativo dentro del hijo.
+   Los eventos touchstart/touchmove sí llegan bien, así que
+   hacemos el scroll nosotros mismos moviendo scrollTop a mano.
+--------------------------------------------------------- */
+
+document.querySelectorAll(".page-scroll").forEach(function (scrollEl) {
+
+    let startY = 0;
+    let startScrollTop = 0;
+    let dragging = false;
+
+    scrollEl.addEventListener("touchstart", function (e) {
+
+        if (e.touches.length !== 1) return;
+
+        dragging = true;
+        startY = e.touches[0].clientY;
+        startScrollTop = scrollEl.scrollTop;
+
+    }, { passive: true });
+
+    scrollEl.addEventListener("touchmove", function (e) {
+
+        if (!dragging || e.touches.length !== 1) return;
+
+        const deltaY = startY - e.touches[0].clientY;
+        const maxScroll = scrollEl.scrollHeight - scrollEl.clientHeight;
+
+        // Si no hay nada que scrollear, dejamos que el navegador
+        // haga lo que quiera con el gesto (no bloqueamos nada).
+        if (maxScroll <= 0) return;
+
+        e.preventDefault();
+
+        const nextScroll = startScrollTop + deltaY;
+        scrollEl.scrollTop = Math.max(0, Math.min(maxScroll, nextScroll));
+
+    }, { passive: false });
+
+    scrollEl.addEventListener("touchend", function () {
+        dragging = false;
+    }, { passive: true });
 
 });
 

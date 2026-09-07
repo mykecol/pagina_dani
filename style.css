@@ -835,6 +835,17 @@ button {
    backface-visibility: hidden. */
 .page-scroll {
     flex: 1;
+
+    /* CLAVE: por defecto un hijo flex tiene min-height:auto, es decir
+       nunca se encoge por debajo de la altura de su propio contenido.
+       Eso hacía que .page-scroll creciera hasta el alto total del texto
+       en vez de quedar limitado al espacio visible: como nunca había
+       overflow REAL dentro de sí mismo, overflow-y:auto no tenía nada
+       que scrollear (era .page-face con overflow:hidden quien recortaba
+       el sobrante, sin generar gesto de scroll). min-height:0 permite
+       que .page-scroll sí se limite al espacio disponible. */
+    min-height: 0;
+
     display: flex;
     flex-direction: column;
 
@@ -845,11 +856,9 @@ button {
     -webkit-overflow-scrolling: touch;
     touch-action: pan-y;
 
-    /* Fuerza a .page-scroll a tener su propia capa de composición,
-       separada del contexto 3D de .letter-page (rotateY + preserve-3d).
-       Sin esto, iOS Safari "traga" los eventos táctiles y no deja
-       hacer scroll dentro de un elemento anidado en un padre con
-       transform 3D, aunque el hijo no tenga ningún transform. */
+    /* Además, separa .page-scroll del contexto 3D de .letter-page
+       (rotateY + preserve-3d), por si acaso interfiere en algunos
+       Safari con los eventos táctiles. */
     -webkit-transform: translate3d(0, 0, 1px);
     transform: translate3d(0, 0, 1px);
     will-change: scroll-position;
