@@ -815,13 +815,11 @@ button {
     display: flex;
     flex-direction: column;
 
-    /* mismo radio que el marco, así el scroll interno
+    /* mismo radio que el marco, así el contenido interno
        nunca se sale del contorno redondeado */
     border-radius: 0 20px 20px 0;
 
-    padding: 45px 45px 55px;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: hidden;
 
     background:
         radial-gradient(circle at 15% 8%, rgba(255, 255, 255, .55) 0%, transparent 40%),
@@ -831,24 +829,40 @@ button {
     box-shadow: inset -10px 0 20px -14px rgba(70, 40, 30, .18);
 }
 
+/* Contenedor interno SIN backface-visibility/preserve-3d: es el que
+   realmente scrollea. Separarlo de .page-face evita el bug de iOS
+   Safari donde el scroll táctil no funciona dentro de elementos con
+   backface-visibility: hidden. */
+.page-scroll {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    padding: 45px 45px 55px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+}
+
 /* scrollbar delgada y a tono, solo por si un texto es MUY largo */
-.page-face::-webkit-scrollbar {
+.page-scroll::-webkit-scrollbar {
     width: 6px;
 }
 
-.page-face::-webkit-scrollbar-track {
+.page-scroll::-webkit-scrollbar-track {
     background: transparent;
 }
 
-.page-face::-webkit-scrollbar-thumb {
+.page-scroll::-webkit-scrollbar-thumb {
     background: rgba(224, 122, 112, .35);
     border-radius: 10px;
 }
 
-.page-face {
+.page-scroll {
     scrollbar-width: thin;
     scrollbar-color: rgba(224, 122, 112, .35) transparent;
-    touch-action: pan-y;
 }
 
 /* la cara trasera viene pre-rotada 180°, así al girar el padre
@@ -1190,10 +1204,11 @@ button {
     }
 
     .page-face {
-        padding: 40px 22px 55px;
         border-radius: 0 0 20px 20px;
-        -webkit-overflow-scrolling: touch;
-        touch-action: pan-y;
+    }
+
+    .page-scroll {
+        padding: 40px 22px 55px;
     }
 
     .letter-page h2 {
