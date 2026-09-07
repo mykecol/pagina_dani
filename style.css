@@ -848,6 +848,7 @@ button {
 .page-face {
     scrollbar-width: thin;
     scrollbar-color: rgba(224, 122, 112, .35) transparent;
+    touch-action: pan-y;
 }
 
 /* la cara trasera viene pre-rotada 180°, así al girar el padre
@@ -1192,6 +1193,7 @@ button {
         padding: 40px 22px 55px;
         border-radius: 0 0 20px 20px;
         -webkit-overflow-scrolling: touch;
+        touch-action: pan-y;
     }
 
     .letter-page h2 {
