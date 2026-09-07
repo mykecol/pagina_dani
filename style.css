@@ -1176,18 +1176,21 @@ button {
     }
 
     .book-right {
+        height: 460px;
         min-height: 460px;
         border-radius: 0 0 26px 26px;
         padding: 10px;
     }
 
     .pages-stack {
+        height: 100%;
         border-radius: 0 0 20px 20px;
     }
 
     .page-face {
         padding: 40px 22px 55px;
         border-radius: 0 0 20px 20px;
+        -webkit-overflow-scrolling: touch;
     }
 
     .letter-page h2 {
