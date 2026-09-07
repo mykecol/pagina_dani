@@ -844,6 +844,15 @@ button {
 
     -webkit-overflow-scrolling: touch;
     touch-action: pan-y;
+
+    /* Fuerza a .page-scroll a tener su propia capa de composición,
+       separada del contexto 3D de .letter-page (rotateY + preserve-3d).
+       Sin esto, iOS Safari "traga" los eventos táctiles y no deja
+       hacer scroll dentro de un elemento anidado en un padre con
+       transform 3D, aunque el hijo no tenga ningún transform. */
+    -webkit-transform: translate3d(0, 0, 1px);
+    transform: translate3d(0, 0, 1px);
+    will-change: scroll-position;
 }
 
 /* scrollbar delgada y a tono, solo por si un texto es MUY largo */
